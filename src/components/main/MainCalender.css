@@ -1,0 +1,160 @@
+.main-calender {
+  width: 100%;
+}
+
+.main-calender > h1 {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 40px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  margin-bottom: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.main-calender-middle {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.main-calender-left, .main-calender-right {
+  width: 48%;
+}
+
+.main-calender-left {
+  text-align: center;
+}
+
+.main-calender-left h2 {
+  margin-top: 5px;
+}
+
+.main-calender-content {
+  margin-top: 20px;
+}
+
+.main-calender-content p {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.main-calender-recent {
+  margin-top: 20px;
+}
+
+.main-calender-comp {
+  width: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  margin-bottom: 7px;
+}
+
+.main-calender-bottom {
+  width: 100%;
+}
+
+.parsents {
+  padding-left: 14%;
+}
+
+.goal-parsent {
+  position: absolute;
+  top: 160px;
+  left: 110px;
+  font-size: 65px;
+  text-shadow: 3px 3px 1px rgba(0,0,0,0.3);
+}
+
+.parsent-title {
+  width: 100px;
+  margin-left: 140px;
+  font-size: 32px;
+}
+
+.graph {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1201px) {
+  .graph {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .graph {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-calender-middle {
+    justify-content: center;
+  }
+
+
+
+  .parsent-box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .parsents {
+    padding: 0;
+  }
+
+  .graph {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .main-calender-middle {
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 40px;
+  }
+
+  .main-calender-left {
+    padding-left: 8%;
+    margin-bottom: 30px;
+  }
+
+  .graph {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-calender-middle {
+    margin-left: 0;
+  }
+
+  .main-calender-left {
+    margin-left: 20%;
+  }
+
+  .graph {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .main-calender {
+    width: 400px;
+  }
+  .main-calender-left {
+    width: 400px;
+    margin-left: 0;
+    padding-left: 1px;
+  }
+}

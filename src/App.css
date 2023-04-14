@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  --main: rgb(242, 243, 207);
+  --sub: rgb(3, 0, 40);
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app-main {
+  width: 80%;
+}
+
+.app-sidebar {
+  width: 20%;
+}
+
+
+.menu-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  z-index: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: none;
+}
+
+.menu-button.open {
+  right: 140px;
+}
+
+
+.menu-button span {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.menu-button span:nth-child(1) {
+  top: 7px;
+  rotate: -30deg;
+  transition: all 0.4s;
+}
+
+.menu-button span:nth-child(2) {
+  top: 21px;
+  rotate: 30deg;
+  transition: all 0.4s;
+}
+
+.menu-button.open span:nth-child(1) {
+  rotate: -44deg;
+  top: 15px;
+} 
+
+.menu-button.open span:nth-child(2) {
+  rotate: 44deg;
+  top: 16px;
+}
+
+
+@media screen and (max-width: 414px) {
+  .app-main {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app-sidebar {
+    width: 0;
+  }
+
+  .menu-button {
+    display: block;
   }
 }

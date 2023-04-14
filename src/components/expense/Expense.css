@@ -1,0 +1,222 @@
+.expense {
+  width: 100%;
+  animation-name: fidein;
+  animation-duration: 0.6s;
+}
+
+.goal-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.goal-title > h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.expense-img {
+  width: 330px;
+  height: 330px;
+}
+
+.expense-images {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.expense-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.expense-main {
+  width: 40%;
+  height: 300px;
+}
+
+.expense-main > h3 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.expense-name {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.expense-money {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.expense-add-button {
+  padding: 5px 10px;
+  width: 200px;
+  border: none;
+  color: #fff;
+  background-color: var(--sub);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.expense-side {
+  width: 40%;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.expense-box {
+  display: flex;
+  background-color: var(--main);
+  margin-bottom: 5px;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 12px;
+  animation-name: fideinX;
+  animation-duration: 1s;
+}
+
+.expense-box > p {
+  margin-right: 10px;
+}
+
+.expense-graph {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.expense-graph > h2 {
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.expense-rank {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 32px;
+}
+
+.expense-rank .one {
+  background: linear-gradient(45deg, #c0b283 0%, #c0b283 45%, #FEE9A0 70%, #c0b283 85%, #c0b283 90% 100%);
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.expense-rank .two {
+  background: linear-gradient(45deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%);
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.expense-rank .three {
+  background: linear-gradient(45deg, #a57e65 0%, #a57e65 45%, #f3cfb8 70%, #a57e65 85%, #a57e65 90% 100%);
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.expense-rankings {
+  display: flex;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.expense-ranking {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--sub);
+  color: #fff;
+  padding-top: 60px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.expense-ranking > h3{
+  font-size: 24px;
+}
+
+.expense-ranking-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+@keyframes fidein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fideinX {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .expense-main {
+    width: 150px;
+  }
+
+  .expense-side {
+    width: 200px;
+  }
+
+  .expense-add-button {
+    width: 150px;
+  }
+
+  .expense-ranking {
+    height: 70px;
+  }
+
+  .expense-ranking > h3 {
+    margin-top: -24px;
+    padding-top: 0;
+  }
+
+  .expense-ranking-money {
+    margin-top: -5px !important;
+  }
+}
+

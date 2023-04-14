@@ -1,0 +1,139 @@
+.main-expense {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.main-expense > h1 {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 40px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  margin-bottom: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.main-expense-middle {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.main-expense-left,.main-expense-right {
+  width: 48%;
+}
+
+.main-expense-left {
+  text-align: center;
+}
+
+.main-expense-left h2 {
+  margin-top: 5px;
+}
+
+.main-expense-content {
+  margin-top: 20px;
+}
+
+.main-expense-content p {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.main-expense-recent {
+  margin-top: 20px;
+}
+
+.main-expense-comp {
+  width: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  margin-bottom: 7px;
+}
+
+.main-expense-bottom {
+  width: 100%;
+}
+
+.expense-parsent-title {
+  width: 300px;
+  margin-left: 84px;
+  font-size: 40px;
+}
+
+.expense-parsent {
+  position: absolute;
+  width: 200px;
+  top: 195px;
+  left: 130px;
+  font-size: 40px;
+  text-shadow: 3px 3px 1px rgba(0,0,0,0.3);
+}
+
+@media screen and (min-width: 1201px) {
+  .graph {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .graph {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-calender-middle {
+    justify-content: center;
+  }
+
+  .parsent-box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .parsents {
+    padding: 0;
+  }
+
+  .graph {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .main-expense-middle {
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 40px;
+  }
+
+  .main-expense-left {
+    padding-left: 8%;
+    margin-bottom: 30px;
+  }
+
+  .graph {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-expense-middle {
+    margin-left: 0;
+  }
+
+  .main-expense-left {
+    margin-left: 20%;
+  }
+
+  .graph {
+    width: 380px;
+  }
+}

@@ -1,0 +1,141 @@
+.signin {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--main);
+}
+
+.signin img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.houseimg {
+  top: -60%;
+  left: 5%;
+  z-index: 200;
+}
+
+.carimg {
+  top: -50%;
+  left: 50%;
+  animation-name: GoLeft;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.balloonimg {
+  top: -100%;
+  left: 20%;
+  animation: floatthing;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+
+.moneyimg {
+  top: -88%;
+  left: 33%;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.signin-box {
+  width: 500px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  animation: fidein;
+  animation-duration: 0.8s;
+}
+
+.signin-box h4, .signin-text {
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.signin-box h1 {
+  text-align: center;
+}
+
+.signin-button-box {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.signin-button {
+  width: 100%;
+  background-color: var(--sub);
+  color: #fff;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.signin-den {
+  text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  .signin-box {
+    width: 400px;
+  }
+
+  .balloonimg {
+    top: -110%;
+  }
+
+  .houseimg {
+    left: 0;
+  }
+
+  .carimg {
+    left: 45%;
+  }
+}
+
+@keyframes floatthing {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes GoLeft {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+      transform: none;
+  }
+}
+
+@keyframes upDown {
+  0% {
+      transform: none;
+  }
+  100% {
+      transform: translateY(1px);
+  }
+}

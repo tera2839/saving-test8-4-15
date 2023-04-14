@@ -1,0 +1,101 @@
+.main {
+  width: 100%;
+  animation-name: fidein;
+  animation-duration: 0.6s;
+}
+
+.main-title-name > h1 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 42px;
+}
+
+.main-title {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.main-remaining {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.main-remaining > h1 {
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.main-remaining h3 {
+  margin-top: 30px;
+}
+
+.main-expense-calender {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-member {
+  display: flex;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.main-member > h2 {
+  margin: 0 10px;
+}
+
+.main-calender {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.main-expense {
+  width: 100%;
+}
+
+.title-icon {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  margin-left: -250px;
+  text-align: center;
+  font-size: 500px !important;
+  z-index: -10;
+  color: rgb(236, 236, 236);
+}
+
+
+@media screen and (max-width: 1000px) {
+  .main-title {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .title-icon {
+    left: 255px;
+    font-size: 400px !important;
+  }
+}
+
+@keyframes fidein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

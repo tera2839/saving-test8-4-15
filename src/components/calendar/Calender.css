@@ -1,0 +1,258 @@
+.calender {
+  width: 100%;
+  animation-name: fidein;
+  animation-duration: 0.6s;
+}
+
+.calender-title > h1 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.calender-sub-title {
+  text-align: center;
+}
+
+.calender-title {
+  margin-bottom: 30px;
+}
+
+.calender-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calender-right {
+  width: 45%;
+}
+
+.calender-left {
+  width: 65%;
+}
+
+.calenderpick {
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.pick-date {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.edit-calender {
+  width: 100%;
+}
+
+.edit-save {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.edit-save > h3 {
+  margin-bottom: 10px;
+}
+
+.edit-date {
+  font-size: 24px;
+}
+
+.edit-input {
+  padding: 5px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.edit-button {
+  background-color: var(--sub);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 8px 5px;
+  width: 210px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.edit-total {
+  font-size: 36px;
+}
+
+.edit-member {
+  margin-top: 20px;
+}
+
+.edit-member-name {
+  width: 215px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.graph-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-graph {
+  margin-top: 50px;
+}
+
+.breakdowns {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.breakdown {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-bottom: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  position: relative;
+}
+
+.breakdown-delete {
+  width: 150px;
+  background-color: rgb(255, 94, 94);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.breakdown-delete:hover {
+  background: #fff;
+  color: rgb(255, 94, 94);
+  border: 1px solid rgb(255, 94, 94);
+}
+
+.delete-container {
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+}
+
+.delete-container.close {
+  display: none;
+}
+
+.breakdown-delete-button {
+  width: 150px;
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.breakdown-delete-button:hover {
+  background-color: #fff;
+  border: 1px solid red;
+  color: red;
+}
+
+.breakdown-cansel-button {
+  width: 150px;
+  border: none;
+  background-color: rgb(139, 225, 254);
+  color: white;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.breakdown-cansel-button:hover {
+  border: 1px solid rgb(139, 225, 254);
+  color: rgb(139, 225, 254);
+  background-color: #fff;
+}
+
+.calender-member {
+  border: 1px solid rgb(207, 207, 207);
+  width: 120px;
+  margin-bottom: 5px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 730px) {
+  .calender-container {
+    flex-direction: column;
+  }
+
+  .calender-right {
+    margin-left: 27%;
+  }
+
+  .calender-left {
+    margin-left: 18%;
+    margin-bottom: 30px;
+  }
+}
+
+@media  screen and (max-width: 414px) {
+  .calenderpick {
+    width: 380px !important;
+    height: 380px !important;
+  }
+
+  .calender-container {
+    justify-content: none;
+  }
+
+  .calender-right {
+    width: 300px;
+    margin: 0;
+    margin-left: 15%;
+  }
+
+  .calender-left {
+    margin-left: 5%;
+  }
+
+  .edit-calender {
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+
+  .delete-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .breakdown-cansel-button {
+    height: 100%;
+  }
+
+  .breakdown-delete-button {
+    height: 100%;
+  }
+}
+
+@keyframes fidein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
